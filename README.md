@@ -18,7 +18,7 @@ Scrapes rental listings from **SUUMO (スーモ)** — Japan's #1 property porta
 | `ward` | select | `渋谷区` | Tokyo 23 wards (千代田区, 港区, 新宿区, 渋谷区, 世田谷区, etc.) |
 | `maxItems` | integer | 100 | Max items to collect |
 | `maxPages` | integer | 2 | Max pages per source (LIFULL is page 1 only) |
-| `sources` | string | `suumo,athome,lifull` | Comma-separated source list |
+| `sources` | string | `suumo,athome` | Comma-separated source list (LIFULL is optional — sometimes blocked) |
 | `proxyConfiguration` | object | — | Apify proxy |
 
 ## Output Sample

@@ -33,8 +33,8 @@
     "sources": {
       "title": "Sources",
       "type": "string",
-      "description": "Comma-separated: suumo,athome,lifull",
-      "default": "suumo,athome,lifull",
+      "description": "Comma-separated: suumo,athome,lifull (LIFULL may be blocked)",
+      "default": "suumo,athome",
       "editor": "textfield"
     },
     "proxyConfiguration": {

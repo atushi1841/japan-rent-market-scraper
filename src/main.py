@@ -34,7 +34,7 @@ async def run(actor_input: dict) -> list[dict]:
     ward = str(actor_input.get("ward", "渋谷区")).strip()
     max_items = int(actor_input.get("maxItems", 100))
     max_pages = int(actor_input.get("maxPages", 2))
-    sources_str = str(actor_input.get("sources", "suumo,athome,lifull"))
+    sources_str = str(actor_input.get("sources", "suumo,athome"))
     enabled = [s.strip() for s in sources_str.split(",") if s.strip() in SOURCES]
 
     import httpx
