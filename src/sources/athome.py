@@ -25,10 +25,9 @@ import httpx
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.athome.co.jp"
+# at home は Accept-Language/Accept 付きだとブロックされる（405）ためUAのみ
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-    "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
 # 東京23区のURL
