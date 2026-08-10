@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "japan-rent-market-scraper",
+  "title": "Japan Rent Market — 3-Site Cross Comparison",
+  "version": "0.1",
+  "buildTag": "latest",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./INPUT_SCHEMA.json"
+}

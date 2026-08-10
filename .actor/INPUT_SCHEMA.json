@@ -1,0 +1,50 @@
+{
+  "title": "Japan Rent Market — 3-Site Cross Comparison",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "ward": {
+      "title": "Ward (東京23区)",
+      "type": "string",
+      "description": "東京都23区から選択（例: 渋谷区, 港区, 新宿区, 世田谷区）",
+      "editor": "select",
+      "enum": [
+        "千代田区", "中央区", "港区", "新宿区", "文京区", "台東区", "墨田区",
+        "江東区", "品川区", "目黒区", "大田区", "世田谷区", "渋谷区", "中野区",
+        "杉並区", "豊島区", "北区", "荒川区", "板橋区", "練馬区", "足立区",
+        "葛飾区", "江戸川区"
+      ],
+      "prefill": "渋谷区"
+    },
+    "maxItems": {
+      "title": "Max Items",
+      "type": "integer",
+      "description": "Maximum items to collect",
+      "default": 100,
+      "minimum": 1
+    },
+    "maxPages": {
+      "title": "Max Pages",
+      "type": "integer",
+      "description": "Max pages per source (LIFULL is page 1 only)",
+      "default": 2,
+      "minimum": 1
+    },
+    "sources": {
+      "title": "Sources",
+      "type": "string",
+      "description": "Comma-separated: suumo,athome,lifull",
+      "default": "suumo,athome,lifull",
+      "editor": "textfield"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "editor": "proxy",
+      "description": "Apify proxy configuration",
+      "default": {"useApifyProxy": true},
+      "prefill": {"useApifyProxy": true}
+    }
+  },
+  "required": []
+}
