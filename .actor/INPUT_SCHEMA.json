@@ -3,6 +3,20 @@
   "type": "object",
   "schemaVersion": 1,
   "properties": {
+    "statsMode": {
+      "title": "Enable statistics mode",
+      "type": "boolean",
+      "description": "Compute rent price statistics and push summary instead of individual items",
+      "default": false,
+      "editor": "checkbox"
+    },
+    "statsKeyword": {
+      "title": "Statistics keyword",
+      "type": "string",
+      "description": "Optional filter by title substring",
+      "editor": "textfield",
+      "default": ""
+    },
     "ward": {
       "title": "Ward (東京23区)",
       "type": "string",
