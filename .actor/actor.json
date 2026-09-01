@@ -6,5 +6,96 @@
   "buildTag": "latest",
   "dockerfile": "./Dockerfile",
   "readme": "./README.md",
-  "input": "./INPUT_SCHEMA.json"
+  "input": "./INPUT_SCHEMA.json",
+  "outputSchema": {
+    "actorOutputSchemaVersion": 1,
+    "title": "Output",
+    "description": "Property/Rent search results",
+    "type": "object",
+    "properties": {
+      "title": {
+        "title": "Title",
+        "type": "string",
+        "description": "Listing title",
+        "template": "{{title}}"
+      },
+      "price": {
+        "title": "Price",
+        "type": "string",
+        "description": "Price/rent in JPY",
+        "template": "{{price}}"
+      },
+      "detailUrl": {
+        "title": "Detail Url",
+        "type": "string",
+        "description": "Listing URL",
+        "template": "{{detailUrl}}"
+      },
+      "shop": {
+        "title": "Shop",
+        "type": "string",
+        "description": "Site name",
+        "template": "{{shop}}"
+      },
+      "statsType": {
+        "title": "Stats Type",
+        "type": "string",
+        "description": "Statistics mode",
+        "template": "{{statsType}}"
+      },
+      "keyword": {
+        "title": "Keyword",
+        "type": "string",
+        "description": "Search keyword",
+        "template": "{{keyword}}"
+      },
+      "count": {
+        "title": "Count",
+        "type": "integer",
+        "description": "Result count",
+        "template": "{{count}}"
+      },
+      "priceMin": {
+        "title": "Price Min",
+        "type": "integer",
+        "description": "Min price",
+        "template": "{{priceMin}}"
+      },
+      "priceMax": {
+        "title": "Price Max",
+        "type": "integer",
+        "description": "Max price",
+        "template": "{{priceMax}}"
+      },
+      "priceAvg": {
+        "title": "Price Avg",
+        "type": "number",
+        "description": "Average price",
+        "template": "{{priceAvg}}"
+      },
+      "priceMedian": {
+        "title": "Price Median",
+        "type": "number",
+        "description": "Median price",
+        "template": "{{priceMedian}}"
+      },
+      "sampleItems": {
+        "title": "Sample Items",
+        "type": "array",
+        "description": "Sample items",
+        "template": "{{sampleItems}}"
+      },
+      "collectedAt": {
+        "title": "Collected At",
+        "type": "string",
+        "description": "Collect timestamp",
+        "template": "{{collectedAt}}"
+      }
+    },
+    "required": [
+      "title",
+      "price",
+      "detailUrl"
+    ]
+  }
 }
