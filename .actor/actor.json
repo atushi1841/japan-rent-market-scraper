@@ -51,38 +51,38 @@
       },
       "count": {
         "title": "Count",
-        "type": "integer",
-        "description": "Result count",
+        "type": "string",
+        "description": "Result count (integer as string)",
         "template": "{{count}}"
       },
       "priceMin": {
         "title": "Price Min",
-        "type": "integer",
-        "description": "Min price",
+        "type": "string",
+        "description": "Min price (integer as string, JPY)",
         "template": "{{priceMin}}"
       },
       "priceMax": {
         "title": "Price Max",
-        "type": "integer",
-        "description": "Max price",
+        "type": "string",
+        "description": "Max price (integer as string, JPY)",
         "template": "{{priceMax}}"
       },
       "priceAvg": {
         "title": "Price Avg",
-        "type": "number",
-        "description": "Average price",
+        "type": "string",
+        "description": "Average price (number as string, JPY)",
         "template": "{{priceAvg}}"
       },
       "priceMedian": {
         "title": "Price Median",
-        "type": "number",
-        "description": "Median price",
+        "type": "string",
+        "description": "Median price (number as string, JPY)",
         "template": "{{priceMedian}}"
       },
       "sampleItems": {
         "title": "Sample Items",
-        "type": "array",
-        "description": "Sample items",
+        "type": "string",
+        "description": "Sample items (JSON array as string)",
         "template": "{{sampleItems}}"
       },
       "collectedAt": {
