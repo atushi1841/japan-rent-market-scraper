@@ -1,5 +1,7 @@
 # Japan Rent Market — 3-Site Cross-Shop Comparison (SUUMO + at home + LIFULL HOME'S)
 
+[![Apify Store](https://img.shields.io/badge/Apify-Store-blue)](https://apify.com/fruitful_quintessence/japan-rent-market-scraper)
+
 **Compare Tokyo 23-ward rental prices across Japan's top 3 property portals in a single dataset.**
 
 Scrapes rental listings from **SUUMO (スーモ)** — Japan's #1 property portal — **at home (アットホーム)** — the #2 portal — and **LIFULL HOME'S (ホームズ)** — the #3 portal. Each item is tagged with its `source` so you can compare rent for the same station/layout across portals.
