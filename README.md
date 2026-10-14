@@ -66,3 +66,15 @@ Public rental listings from SUUMO, at home, and LIFULL HOME'S (address, rent, la
 ## Connect
 
 Connect to your workflow via **Apify Connectors**: Google Sheets, Slack, or webhooks — automate rent monitoring without code.
+
+---
+
+## Related Actors
+
+This actor is part of the **fruitful_quintessence** Apify suite. Datasets in the same category are available from sibling actors:
+
+- **[suumo-japan-real-estate-scraper](https://apify.com/fruitful_quintessence/suumo-japan-real-estate-scraper)** — Scrapes rental and used-condo sale listings from SUUMO (スーモ), Japan's #1 property portal.
+- **[japan-property-market-scraper](https://apify.com/fruitful_quintessence/japan-property-market-scraper)** — Used condo sale price comparison across SUUMO and at home.
+- **[japan-kakaku-price-search](https://apify.com/fruitful_quintessence/japan-kakaku-price-search)** — Price.com.jp search: product name, lowest price, shop count & review score.
+
+See the full suite on the [Apify profile](https://apify.com/fruitful_quintessence).
