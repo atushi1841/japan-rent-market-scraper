@@ -12,7 +12,7 @@
             "registryType": "mcpb",
             "identifier": "https://github.com/atushi1841/japan-rent-market-scraper/releases/download/v1.0.0/server.mcpb",
             "version": "1.0.0",
-            "fileSha256": "f6eafb2677f34546de2ce9ba377af7d843162bcf45e6920c6d7ebdbd21857c1a",
+            "fileSha256": "PENDING",
             "transport": {
                 "type": "stdio"
             }
