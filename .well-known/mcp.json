@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "japan-rent-market-mcp": {
+      "name": "Japan Rent Market MCP",
+      "type": "stdio",
+      "description": "MCP server wrapping japan-rent-market-scraper Apify actor.",
+      "command": "python3",
+      "args": [
+        "src/stdio_main.py"
+      ],
+      "repo": "https://github.com/atushi1841/japan-rent-market-scraper"
+    }
+  }
+}
