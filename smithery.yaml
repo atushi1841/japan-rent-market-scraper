@@ -1,0 +1,10 @@
+# Smithery.ai configuration
+description: "MCP server for Japan Rent Market Scraper. Apify actor: fruitful_quintessence/japan-rent-market-scraper"
+repositoryUrl: https://github.com/atushi1841/japan-rent-market-scraper
+startCommand:
+  type: stdio
+  commandFunction: |
+    (config) => ({
+      command: 'python3',
+      args: ['src/stdio_main.py']
+    })
