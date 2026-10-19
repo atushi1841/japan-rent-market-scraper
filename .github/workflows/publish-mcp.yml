@@ -1,0 +1,56 @@
+name: Publish to MCP Registry
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "server.json publish"
+        type: boolean
+        default: true
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mcp-publisher
+        run: |
+          curl -sL "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz" -o /tmp/mcp-publisher.tar.gz
+          tar -xzf /tmp/mcp-publisher.tar.gz -C /tmp mcp-publisher
+          sudo mv /tmp/mcp-publisher /usr/local/bin/mcp-publisher
+          mcp-publisher --version
+
+      - name: Authenticate (GitHub OIDC)
+        run: mcp-publisher login github-oidc
+
+      - name: Build MCPB
+        run: |
+          tar -czf server.mcpb --exclude='.git' --exclude='node_modules' .
+          sha256sum server.mcpb
+
+      - name: Update server.json hash
+        run: |
+          HASH=$(sha256sum server.mcpb | cut -d' ' -f1)
+          python3 -c "
+import json
+with open('server.json') as f:
+    d = json.load(f)
+d['packages'][0]['fileSha256'] = '$HASH'
+with open('server.json', 'w') as f:
+    json.dump(d, f, indent=2)
+"
+
+      - name: Create GitHub Release
+        run: |
+          gh release create v1.0.0 server.mcpb --title "v1.0.0" --generate-notes
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish server.json
+        if: ${{ inputs.publish }}
+        run: mcp-publisher publish
