@@ -1,0 +1,16 @@
+{
+  "manifest_version": "0.4",
+  "name": "japan-rent-market-mcp",
+  "display_name": "Japan Rent Market MCP",
+  "version": "1.0.0",
+  "description": "3-site rental cross-shop comparison (SUUMO + at home + LIFULL HOME'S). Live data via Apify actor (fruitful_quintessence/japan-rent-market-scraper). Gumroad: https://atushi5.gumroad.com/l/kutuxe",
+  "author": {
+    "name": "Kensho Project",
+    "email": "atushi1841@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atushi1841/japan-rent-market-scraper"
+  },
+  "homepage": "https://github.com/atushi1841/japan-rent-market-scraper"
+}
