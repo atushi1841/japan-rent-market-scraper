@@ -1,21 +1,21 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.atushi1841/japan-rent-market-mcp",
-  "description": "3-site rental cross-shop comparison (SUUMO + at home + LIFULL HOME'S). Live data via Apify actor (fruitful_quintessence/japan-rent-market-scraper). Gumroad: https://atushi5.gumroad.com/l/kutuxe",
-  "repository": {
-    "url": "https://github.com/atushi1841/japan-rent-market-scraper",
-    "source": "github"
-  },
-  "version": "1.0.0",
-  "packages": [
-    {
-      "registryType": "mcpb",
-      "identifier": "https://github.com/atushi1841/japan-rent-market-scraper/releases/download/v1.0.0/server.mcpb",
-      "version": "1.0.0",
-      "fileSha256": "PENDING",
-      "transport": {
-        "type": "stdio"
-      }
-    }
-  ]
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "io.github.atushi1841/atushi1841/japan-rent-market-mcp",
+    "description": "Japan rental prices SUUMO/at_home/LIFULL cross-shop via Apify",
+    "repository": {
+        "url": "https://github.com/atushi1841/japan-rent-market-scraper",
+        "source": "github"
+    },
+    "version": "1.0.0",
+    "packages": [
+        {
+            "registryType": "mcpb",
+            "identifier": "https://github.com/atushi1841/japan-rent-market-scraper/releases/download/v1.0.0/server.mcpb",
+            "version": "1.0.0",
+            "fileSha256": "39fabebfb137d159d1ad1bdf5753346aaa3e3e0536f15b9db95642620f71d085",
+            "transport": {
+                "type": "stdio"
+            }
+        }
+    ]
 }
