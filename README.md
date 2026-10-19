@@ -91,3 +91,13 @@ Install via MCP: add to your MCP config:
 ```json
 {"mcpServers": {"japan-rent-market-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
 ```
+
+## Smithery
+
+[![Smithery](https://smithery.ai/server/japan-rent-market-mcp/badge)](https://smithery.ai/server/japan-rent-market-mcp)
+
+Install via Smithery:
+
+```bash
+npx @smithery/cli install japan-rent-market-mcp --client claude
+```
