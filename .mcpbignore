@@ -1,0 +1,11 @@
+.mcpbignore
+# MCPB bundle ignore rules
+.git/
+.github/
+.venv/
+node_modules/
+.actor/
+Dockerfile
+pay_per_event.json
+requirements.txt
+*.mcpb
