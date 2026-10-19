@@ -78,3 +78,16 @@ This actor is part of the **fruitful_quintessence** Apify suite. Datasets in the
 - **[japan-kakaku-price-search](https://apify.com/fruitful_quintessence/japan-kakaku-price-search)** — Price.com.jp search: product name, lowest price, shop count & review score.
 
 See the full suite on the [Apify profile](https://apify.com/fruitful_quintessence).
+
+## MCP Server & Registry
+
+This scraper is also available as an MCP server for AI agents:
+
+- **MCP Registry**: `io.github.atushi1841/japan-rent-market-mcp`
+- **Apify Store**: https://apify.com/fruitful_quintessence/japan-rent-market-scraper
+- **Gumroad**: https://atushi5.gumroad.com/l/kutuxe
+
+Install via MCP: add to your MCP config:
+```json
+{"mcpServers": {"japan-rent-market-mcp": {"command": "python3", "args": ["src/stdio_main.py"]}}}
+```
