@@ -1,21 +1,21 @@
 {
-    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-    "name": "io.github.atushi1841/japan-rent-market-mcp",
-    "description": "Japan rental prices SUUMO/at_home/LIFULL cross-shop via Apify",
-    "repository": {
-        "url": "https://github.com/atushi1841/japan-rent-market-scraper",
-        "source": "github"
-    },
-    "version": "1.0.0",
-    "packages": [
-        {
-            "registryType": "mcpb",
-            "identifier": "https://github.com/atushi1841/japan-rent-market-scraper/releases/download/v1.0.0/server.mcpb",
-            "version": "1.0.0",
-            "fileSha256": "74d0139300d5c78730b64527f4f51a0d9a783c2287a882f52b36f4449c69e44e",
-            "transport": {
-                "type": "stdio"
-            }
-        }
-    ]
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.atushi1841/japan-rent-market-mcp",
+  "description": "Japan rental prices SUUMO/at_home/LIFULL cross-shop via Apify | Data: https://apify.com/fruitful_quintessence | 全 Gist 相互参照索引: https://gist.github.com/atushi1841/413d5887e2c797d3628c8350cded7c97",
+  "repository": {
+    "url": "https://github.com/atushi1841/japan-rent-market-scraper",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/atushi1841/japan-rent-market-scraper/releases/download/v1.0.0/server.mcpb",
+      "version": "1.0.0",
+      "fileSha256": "74d0139300d5c78730b64527f4f51a0d9a783c2287a882f52b36f4449c69e44e",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
 }
